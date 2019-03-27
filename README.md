@@ -1,6 +1,6 @@
 # Movie Finder
 
-Movie Finder is an app that consumes data from The Movie DB, organizes and presents that data to users, and shows users detailed data of the movies that interest them.
+Movie Finder is an app that consumes data from The Movie DB, organizes and presents that data to users, and shows users detailed information about the movies that interest them.
 
 ## How to get this project up and running on your machine:
 
