@@ -8,6 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+    public class ViewHolder extends RecyclerView.ViewHolder {
+
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         Context context = viewGroup.getContext();
@@ -17,9 +21,5 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         View view = inflater.inflate(listItemId, viewGroup, shouldAttachImmediately);
 
         return new ViewHolder(view);
-    }
-
-    public class ViewHolder extends RecyclerView.ViewHolder {
-
     }
 }
