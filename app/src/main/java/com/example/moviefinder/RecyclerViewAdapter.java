@@ -21,4 +21,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         return new ViewHolder(view);
     }
+
+    @Override
+    public void onBindViewHolder(ViewHolder viewHolder, int i) {
+        Picasso.get().load().into(viewHolder);
+    }
 }
