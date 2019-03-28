@@ -10,7 +10,9 @@ import com.squareup.picasso.Picasso;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
-
+        public ViewHolder(View view) {
+            super(view);
+        }
     }
 
     @Override
