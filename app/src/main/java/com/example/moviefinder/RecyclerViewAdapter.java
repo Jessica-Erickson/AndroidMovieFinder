@@ -17,8 +17,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         Context context = viewGroup.getContext();
         int listItemId = R.layout.movie_poster_view;
         LayoutInflater inflater = LayoutInflater.from(context);
-        boolean shouldAttachImmediately = false;
-        View view = inflater.inflate(listItemId, viewGroup, shouldAttachImmediately);
+        View view = inflater.inflate(listItemId, viewGroup, false);
 
         return new ViewHolder(view);
     }
