@@ -17,6 +17,9 @@ android {
             buildConfigField 'String', "ApiKey", MovieFinder_ApiKey
         }
     }
+    repositories {
+        mavenCentral()
+    }
 }
 
 dependencies {
