@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+    private String[] mImageData;
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final ImageView mImageView;
 
@@ -32,6 +34,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
-        Picasso.get().load("").into(viewHolder.mImageView);
+        String imgUrl = "https://image.tmdb.org/t/p/w185" + mImageData[i];
+        Picasso.get().load(imgUrl).into(viewHolder.mImageView);
     }
 }
