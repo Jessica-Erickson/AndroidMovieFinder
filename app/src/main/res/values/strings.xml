@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Movie Finder</string>
+    <string name="image_prefix">https://image.tmdb.org/t/p/w185</string>
 </resources>
