@@ -46,4 +46,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             return 0;
         }
     }
+
+    public void setImageData(String[] imageData) {
+        mImageData = imageData;
+        notifyDataSetChanged();
+    }
 }
