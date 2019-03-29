@@ -37,4 +37,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         String imgUrl = String.valueOf(R.string.image_prefix) + mImageData[i];
         Picasso.get().load(imgUrl).into(viewHolder.mImageView);
     }
+
+    @Override
+    public int getItemCount() {
+        if (mImageData != null) {
+            return mImageData.length;
+        } else {
+            return 0;
+        }
+    }
 }
