@@ -18,5 +18,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.tv_movies_recycler);
 
         GridLayoutManager layoutManager = new GridLayoutManager(this,2, GridLayoutManager.VERTICAL, false);
+
+        mRecyclerView.setLayoutManager(layoutManager);
     }
 }
