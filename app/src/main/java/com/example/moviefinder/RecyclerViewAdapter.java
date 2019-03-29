@@ -34,7 +34,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
-        String imgUrl = new StringBuilder().append(R.string.image_prefix).append(mImageData[i]).toString();
+        String imgUrl = String.valueOf(R.string.image_prefix) + mImageData[i];
         Picasso.get().load(imgUrl).into(viewHolder.mImageView);
     }
 }
