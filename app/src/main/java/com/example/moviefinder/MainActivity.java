@@ -23,5 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
 
         mRecyclerAdapter = new RecyclerViewAdapter();
+
+        mRecyclerView.setAdapter(mRecyclerAdapter);
     }
 }
