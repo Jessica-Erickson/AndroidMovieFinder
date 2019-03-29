@@ -20,5 +20,6 @@ public class MainActivity extends AppCompatActivity {
         GridLayoutManager layoutManager = new GridLayoutManager(this,2, GridLayoutManager.VERTICAL, false);
 
         mRecyclerView.setLayoutManager(layoutManager);
+        mRecyclerView.setHasFixedSize(true);
     }
 }
